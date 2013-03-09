@@ -1,0 +1,27 @@
+#menu-primary{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	
+	
+}
+
+.menu-item{
+		color:$white;
+		background: $black;
+		width:150px;
+		text-align:left;
+		margin-bottom:20px;
+		
+		a{
+			color:$white;
+		}
+		
+	}
+
+.menu-item.current-menu-item{
+	width:100%;
+	background: $red;
+	
+	
+}
