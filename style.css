@@ -330,6 +330,18 @@ body {
   width: 90%;
   margin: 0 auto 0 auto; }
 
+.top-header {
+  zoom: 1; }
+  .top-header:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+
 /*
  * Typography
  *
@@ -340,9 +352,6 @@ body {
   line-height: 2;
   font-family: "Josefin Slab", serif; }
 
-.banner, .contentinfo {
-  font-family: "Droid Sans", sans-serif; }
-
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   margin: 0 0 0.4em;
@@ -351,7 +360,12 @@ h1, h2, h3, h4, h5, h6 {
   font-smoothing: antialiased; }
 
 h1 {
-  font-weight: 500; }
+  font-weight: 500;
+  text-transform: uppercase; }
+
+h1 a {
+  font-weight: 500;
+  text-transform: uppercase; }
 
 h2 {
   letter-spacing: -3px;
@@ -390,6 +404,91 @@ cite {
 a {
   text-decoration: none; }
 
+h1.site-title {
+  height: 200px;
+  width: 200px;
+  float: left; }
+  h1.site-title a {
+    color: grey;
+    border: solid red 1px;
+    display: block;
+    width: 134px;
+    height: 140px;
+    position: relative;
+    overflow: hidden; }
+
+.title-background {
+  display: block;
+  position: absolute;
+  z-index: -9999; }
+
+/*  these are all different*/
+/*
+.singular-page-template-method .title-background{
+	width:90px;
+	height:$dependency-a-height;
+	background-color: lighten($red, 10%);
+	left:-20px;
+	@include transform(skewX(10deg));
+	
+	
+	
+}
+
+
+*/
+.home .title-background {
+  width: 134px;
+  height: 90px;
+  background-color: #ff6666;
+  top: -20px;
+  -webkit-transform: skewy(-10deg);
+  -moz-transform: skewy(-10deg);
+  -ms-transform: skewy(-10deg);
+  -o-transform: skewy(-10deg);
+  transform: skewy(-10deg); }
+
+.singular-page .title-background {
+  width: 134px;
+  height: 90px;
+  background-color: #ff6666;
+  top: 80px;
+  -webkit-transform: skewy(20deg);
+  -moz-transform: skewy(20deg);
+  -ms-transform: skewy(20deg);
+  -o-transform: skewy(20deg);
+  transform: skewy(20deg); }
+
+.singular-post .title-background {
+  width: 90px;
+  height: 140px;
+  background-color: #ff6666;
+  right: -20px;
+  -webkit-transform: skewX(-10deg);
+  -moz-transform: skewX(-10deg);
+  -ms-transform: skewX(-10deg);
+  -o-transform: skewX(-10deg);
+  transform: skewX(-10deg); }
+
+.title-gravity {
+  display: block;
+  padding: 8px 4px 70px 4px; }
+
+.title-studies {
+  display: block;
+  padding: 0 4px 8px 4px; }
+
+/****
+**site.description
+*****/
+.site-description {
+  margin-top: 80px;
+  float: right;
+  font-weight: 300; }
+
+/*****
+** menu 
+*****/
 .menu ul {
   list-style-type: none;
   margin: 0;

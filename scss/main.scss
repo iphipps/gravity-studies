@@ -1,4 +1,15 @@
-.home .hentry{
-	width:250px;
-	float:left;
-}
+// Import main body pages
+	
+	
+	@import "main_body/globals";
+	
+	@import "main_body/home";
+	
+	@import "main_body/page";
+	
+	@import "main_body/post";
+	
+	@import "main_body/page-template";
+	
+	
+

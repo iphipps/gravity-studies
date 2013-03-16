@@ -196,6 +196,7 @@ function firewood_filter_site_title() {
 
 }
 
+
 /**
  * Filter hybrid site description
  *
@@ -205,7 +206,7 @@ function firewood_filter_site_description() {
 
 	if ( $description = get_bloginfo( 'description' ) )
 
-		$description = '<h2 class="description site-description">' . $description . '</h2>';
+		$description = '<h2 class="description site-description">Paintings <br/>BY <br/>Nicole Martinez</h2>';
 
 	return $description;
 

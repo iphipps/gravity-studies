@@ -42,9 +42,9 @@
 			<?php do_atomic( 'open_header' ); // firewood_open_header ?>
 
 			<div class="branding">
-
+				<div class="top-header">
 				<?php do_atomic( 'branding' ); // firewood_branding ?>
-				
+				</div>
 				<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
 			</div><!-- / .branding -->
