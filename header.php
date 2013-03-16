@@ -34,6 +34,7 @@
 	</head>
 
 	<body class="<?php firewood_body_class(); ?>">
+	<div class="top">
 
 	<?php do_atomic( 'before_header' ); // firewood_before_header ?>
 						

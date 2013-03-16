@@ -1,7 +1,64 @@
-body{
+
+
+
+//sticky-footer
+
+
+html{
+	height: 100%;
+	}
+
+
+body {
+	height: 100%;
+	
+
+	
+	}
+
+.top {
+	min-height: 100%;
+	
+	width:100%;
+	margin: 0 auto;
+	border-top: 10px black solid;
+
+	
+	}
+	
+.banner{
 	width:90%;
 	margin:0 auto 0 auto;
+	@include clrfx;
 }
+.main {
+	padding-bottom: 170px;
+	width:90%;
+	margin:0 auto 0 auto;
+	@include clrfx;
+}
+	
+
+
+
+
+.bottom {
+	width:100%;
+	background-color: black;
+	position: relative;
+	clear:both;
+	margin-top: -170px; /* negative value of footer height */
+	height: 170px;
+	@include clrfx;
+	} 
+
+.contentinfo{
+	width:90%;
+	margin:0 auto 0 auto;
+	color: white;
+}
+
+//end sticky footer
 
 .top-header{
 	@include clrfx;

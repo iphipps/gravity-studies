@@ -8,7 +8,8 @@
  */
 ?>
 	</div><!-- / .main -->
-
+	</div><!-- / .top -->
+	<div class="bottom">
 	<?php do_atomic( 'before_footer' ); // firewood_before_footer ?>
 
 		<div class="contentinfo" role="contentinfo">
@@ -16,6 +17,8 @@
 			<?php do_atomic( 'open_footer' ); // firewood_open_footer ?>
 
 			<?php do_atomic( 'footer' ); // firewood_footer ?>
+			<h3>Nicole Martinez, Copyright 2003</h3>
+			<h1 class="footer-site-title">Gravity Studies</h1>
 
 			<?php do_atomic( 'close_footer' ); // firewood_close_footer ?>
 
@@ -30,6 +33,6 @@
 	<script src="<?php echo get_stylesheet_directory_uri() . '/js/functions.js'?>"></script>
 	
 	<?php wp_footer(); // wp_footer ?>
-
+	</div><!-- / .bottom -->
 </body>
 </html>

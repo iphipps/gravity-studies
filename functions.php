@@ -61,7 +61,7 @@ function firewood_theme_setup() {
 	
 	/* Add the title, byline, and entry meta */
 	add_action( "{$prefix}_open_entry", 'firewood_entry_header' );
-	add_action( "{$prefix}_close_entry", 'firewood_entry_meta' );
+
 
 
 
@@ -217,6 +217,9 @@ function firewood_filter_site_description() {
  *
  * @since 1.0
  */
+
+
+
 function firewood_entry_header() {
 
 	$entry_byline = '';
@@ -229,16 +232,20 @@ function firewood_entry_header() {
 
 	echo apply_atomic_shortcode( 'entry_title', '[entry-title]' );
 
-	echo apply_atomic_shortcode( 'byline', $entry_byline );
+	// echo apply_atomic_shortcode( 'byline', $entry_byline );
 
 	echo '</div><!-- / .entry-header -->';
 }
+
+
 
 /**
  * Displays the default entry metadata.
  *
  * @since 1.0
  */
+ 
+ /*
 function firewood_entry_meta() {
 
 	$entry_meta = '';
@@ -258,6 +265,8 @@ function firewood_entry_meta() {
 	echo '</div><!-- / .entry-meta -->';
 
 }
+
+*/
 
 
 
