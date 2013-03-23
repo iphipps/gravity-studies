@@ -340,7 +340,7 @@ body {
 
 .banner {
   width: 90%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   zoom: 1; }
   .banner:after {
     clear: both;
@@ -392,7 +392,8 @@ body {
   color: white; }
 
 .top-header {
-  zoom: 1; }
+  zoom: 1;
+  margin: 20px auto; }
   .top-header:after {
     clear: both;
     content: ' ';
@@ -550,7 +551,20 @@ h1.site-title {
 .site-description {
   margin-top: 80px;
   float: right;
-  font-weight: 300; }
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-size: 1.6rem;
+  letter-spacing: 1px; }
+
+.paintings {
+  display: block; }
+
+.by {
+  display: block; }
+
+.martinez {
+  font-style: italic; }
 
 /*****
 ** menu 

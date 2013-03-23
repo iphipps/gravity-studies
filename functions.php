@@ -206,7 +206,7 @@ function firewood_filter_site_description() {
 
 	if ( $description = get_bloginfo( 'description' ) )
 
-		$description = '<h2 class="description site-description">Paintings <br/>BY <br/>Nicole Martinez</h2>';
+		$description = '<h2 class="description site-description"><span class="paintings">Paintings </span><span class="by">BY </span><span class="nicole">Nicole</span><span class="martinez">Martinez</span></h2>';
 
 	return $description;
 

@@ -126,7 +126,24 @@ h1.site-title{
 	margin-top: 80px;
 	float:right;
 	font-weight:300;
+	text-transform: uppercase;
 	
+	@include font-size(16);
+	letter-spacing: 1px;
+	
+}
+.paintings{
+	display:block;
+}
+.by{
+	display:block;
+
+}
+.nicole{
+	
+}
+.martinez{
+	font-style: italic;
 }
 
 /*****

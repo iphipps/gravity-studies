@@ -26,11 +26,21 @@ get_header(); // Loads the header.php template. ?>
 					<?php do_atomic( 'open_entry' ); // firewood_open_entry ?>
 
 						<div class="entry-content">
-							<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'thumbnail' ) ); ?>
+							<div class="entry-paragraph">
+								<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'firewood' ) ); ?>
 
-							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'firewood' ) ); ?>
+								<a href="#" class="inquiry-purchase">Inquire For Purchase</a>
+							</div>
+							<div class="hero-image">
+							<?php if( get_field('big_image') ): ?>
+							<img src="<?php the_field('big_image'); ?>" alt="" />
+							<?php endif;?>
+
+							</div>
+
 							
-							<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'firewood' ), 'after' => '</p>' ) ); ?>
+							
+							
 						</div><!-- / .entry-content -->
 
 					<?php do_atomic( 'close_entry' ); // firewood_close_entry ?>
@@ -50,11 +60,11 @@ get_header(); // Loads the header.php template. ?>
 
 			<?php else : ?>
 
-				<?php get_template_part( 'loop-error' ); // Loads the loop-error.php template. ?>
+				
 
 			<?php endif; ?>
 
-		<?php do_atomic( 'close_content' ); // firewood_close_content ?>
+		
 
 	</div><!-- / .content -->
 

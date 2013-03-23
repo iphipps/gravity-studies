@@ -56,27 +56,36 @@ get_header(); // Loads the header.php template. ?>
 			<?php endif; ?>
 
 		<?php do_atomic( 'close_content' ); // firewood_close_content ?>
-		
+		<div class="colophon-posts">
 		<?php wp_reset_postdata(); ?>
 		
-		<?php
-			    $args = array(
-			        'post_type' => 'post'
-			    );
-			
-			    $post_query = new WP_Query($args);
-			if($post_query->have_posts() ) {
-			  while($post_query->have_posts() ) {
-			    $post_query->the_post();
-			    ?>
-			    <?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'thumbnail' ) ); ?>
+		<?php query_posts('post_type=post' . '&showposts=4'); ?>
 
-			    <?php
-			  }
-			}
-?>
+<?php $variable=0;?>
 
+<div class="first-row">
+<?php while ( have_posts() ) : the_post(); ?>
+<?php if(($variable+1)<3){ ?>
+<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'thumbnail' ) ); ?>
+<?php $variable+=1; ?>
+<?php }else{ ?>
+<?php $variable=1; ?>
+</div>
+
+<div class="second-row">
+
+<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'thumbnail' ) ); ?>
+
+<?php }?>
+<?php endwhile; ?>
+</div>
+
+			    
+
+			  
+		</div>
 	</div><!-- / .content -->
+	
 
 	<?php do_atomic( 'after_content' ); // firewood_after_content ?>
 

@@ -28,7 +28,7 @@ body {
 	
 .banner{
 	width:90%;
-	margin:0 auto 0 auto;
+	margin: 0 auto;
 	@include clrfx;
 }
 .main {
@@ -62,4 +62,5 @@ body {
 
 .top-header{
 	@include clrfx;
+	margin:20px auto;
 }
