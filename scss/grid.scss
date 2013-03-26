@@ -32,7 +32,8 @@ body {
 	@include clrfx;
 }
 .main {
-	padding-bottom: 170px;
+	padding-bottom: 230px; //(negative margin top = negative footer height)*-1+(margin-bottom of main)
+	margin-bottom:60px;
 	width:90%;
 	margin:0 auto 0 auto;
 	@include clrfx;

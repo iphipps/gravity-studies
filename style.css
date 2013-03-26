@@ -353,7 +353,8 @@ body {
     height: 0; }
 
 .main {
-  padding-bottom: 170px;
+  padding-bottom: 230px;
+  margin-bottom: 60px;
   width: 90%;
   margin: 0 auto 0 auto;
   zoom: 1; }
@@ -528,7 +529,10 @@ h1.site-title {
   text-shadow: none;
   color: transparent;
   background-color: transparent;
-  background: url("images/logo1.png") center center no-repeat transparent;
+  background-image: url("images/logo1.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center center;
   position: relative; }
   h1.site-title a {
     position: absolute;
@@ -536,6 +540,21 @@ h1.site-title {
     bottom: 0;
     left: 0;
     right: 0; }
+
+.home h1.site-title {
+  background-image: url("images/logo2.png"); }
+
+.singular-post h1.site-title {
+  background-image: url("images/logo4.png"); }
+
+.page-template-default h1.site-title {
+  background-image: url("images/logo5.png"); }
+
+.page-template-about-us h1.site-title {
+  background-image: url("images/logo3.png"); }
+
+.page-template-inquiries h1.site-title {
+  background-image: url("images/logo3.png"); }
 
 .title-gravity {
   display: block;
@@ -602,6 +621,17 @@ h1.site-title {
 .home .hentry {
   width: 250px;
   float: left; }
+
+.inquiry-purchase {
+  background-color: #ff3333;
+  color: white;
+  padding: 13px 10px 10px 10px;
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-style: italic;
+  margin: 20px 0;
+  display: block; }
 
 .home .column-1 {
   width: 280px;
@@ -708,3 +738,55 @@ h1.site-title {
   max-width: 80%;
   overflow: hidden;
   float: left; }
+
+.page-template-about-us .main {
+  zoom: 1;
+  z-index: -200; }
+  .page-template-about-us .main:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+.page-template-about-us .excerpt {
+  padding-left: 290px;
+  z-index: -200;
+  position: absolute;
+  top: 268px; }
+.page-template-about-us .the_content {
+  padding-left: 290px;
+  min-height: 300px;
+  margin-bottom: 60px; }
+.page-template-about-us .first-row {
+  zoom: 1; }
+  .page-template-about-us .first-row:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+  .page-template-about-us .first-row img {
+    width: 280px;
+    margin-left: 290px;
+    margin-right: 10px; }
+.page-template-about-us .second-row {
+  width: 1160px;
+  zoom: 1; }
+  .page-template-about-us .second-row:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+  .page-template-about-us .second-row img {
+    width: 280px;
+    margin-right: 290px; }
