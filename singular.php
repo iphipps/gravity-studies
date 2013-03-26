@@ -6,9 +6,51 @@
  * @since 1.0
  * @package firewood
  * @subpackage Template
- */
+ */?>
 
-get_header(); // Loads the header.php template. ?>
+	<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+
+		<meta charset="<?php bloginfo( 'charset' ); ?>">
+
+		<title><?php wp_title(''); ?></title>
+
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+		<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+		<?php wp_head(); // wp_head ?>
+
+		<script src="<?php echo get_stylesheet_directory_uri() . '/js/modernizr-2.5.3.min.js'?>"></script>
+
+	</head>
+
+	<body class="<?php firewood_body_class(); ?>">
+		<div class="top">
+	<div class="banner" role="banner">
+	
+			
+			<div class="branding">
+				<div class="top-header">
+				<h1 class="title site-title">
+				<?php echo '<a href="' . home_url() . '" title="Gravity Studies" rel="home">'; ?><span class="title-background"></span><span class="title-gravity">Gravity</span> <span class="title-studies">Studies</a></h1><h2 class="description site-description">Paintings <br/>BY <br/>Nicole Martinez</h2>				
+				</div>
+
+			</div><!-- / .branding -->
+				
+			
+		</div>
+		<div class="main">
+
+			<?php do_atomic( 'open_main' ); // firewood_open_main ?>
 	<?php do_atomic( 'before_content' ); // firewood_before_content ?>
 	<!-- .singular.php /-->
 	<div class="hfeed content" role="main">
@@ -23,13 +65,19 @@ get_header(); // Loads the header.php template. ?>
 
 				<div class="<?php firewood_entry_class(); ?>">
 
-					<?php do_atomic( 'open_entry' ); // firewood_open_entry ?>
+					
 
 						<div class="entry-content">
-							<div class="entry-paragraph">
-								<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'firewood' ) ); ?>
+							<div class="column_1">
+								<div class="main-menu" role="navigation">
+										<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+								</div>
+								<div class="entry-paragraph">
+									<?php do_atomic( 'open_entry' ); // firewood_open_entry ?>
+									<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'firewood' ) ); ?>
 
-								<a href="#" class="inquiry-purchase">Inquire For Purchase</a>
+									<a href="#" class="inquiry-purchase">Inquire For Purchase</a>
+								</div>
 							</div>
 							<div class="hero-image">
 							<?php if( get_field('big_image') ): ?>

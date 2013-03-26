@@ -1,15 +1,17 @@
-<?php
-/*
- * The index template is display when a template with higher
- * specificity is not included in a theme.
+ <?php
+/**
+ * Template Name: About-us
  *
- * @since 1.0
- * @package firewood
- * @subpackage Template
- */
+ *
+ * @package Gravity Studies
+ * @subpackage Page Template
+ *
+ */ ?>
 
-get_header(); // Loads the header.php template. ?>
-<!-- .page.php /-->
+
+   
+<?php get_header(); // Loads the header.php template. ?>
+<!-- .page-template-about-us.php /-->
 	<?php do_atomic( 'before_content' ); // firewood_before_content ?>
 	<div class="hfeed content" role="main">
 
@@ -23,14 +25,13 @@ get_header(); // Loads the header.php template. ?>
 
 				<div class="<?php firewood_entry_class(); ?>">
 
-					<?php do_atomic( 'open_entry' ); // firewood_open_entry ?>
-
 						<div class="entry-content">
-							<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'thumbnail' ) ); ?>
-
-							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'firewood' ) ); ?>
-							
-							<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'firewood' ), 'after' => '</p>' ) ); ?>
+							<div class="excerpt"><?php the_excerpt(); ?></div>
+							<div class="the_content">
+								<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'firewood' ) ); ?>
+								
+								<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'firewood' ), 'after' => '</p>' ) ); ?>
+							</div>
 						</div><!-- / .entry-content -->
 
 					<?php do_atomic( 'close_entry' ); // firewood_close_entry ?>

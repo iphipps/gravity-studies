@@ -1,0 +1,31 @@
+.page-template-default{
+	.hfeed{
+		
+	}
+
+	.main{
+		margin-left:290px;
+		margin-top:-105px;
+		width:80%;
+		@include clrfx;
+		z-index:-200;
+	}
+
+
+	.first-row{
+		@include clrfx;
+		margin-left:290px;
+		img{
+			width:280px;
+			margin-right:10px;
+		}
+	}
+
+	.second-row{
+		@include clrfx;
+		img{
+			width:280px;
+			margin-right:10px;
+		}
+	}
+}

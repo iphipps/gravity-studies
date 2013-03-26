@@ -653,3 +653,58 @@ h1.site-title {
   bottom: 0;
   left: 0;
   right: 0; }
+
+.page-template-default .main {
+  margin-left: 290px;
+  margin-top: -105px;
+  width: 80%;
+  zoom: 1;
+  z-index: -200; }
+  .page-template-default .main:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+.page-template-default .first-row {
+  zoom: 1;
+  margin-left: 290px; }
+  .page-template-default .first-row:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+  .page-template-default .first-row img {
+    width: 280px;
+    margin-right: 10px; }
+.page-template-default .second-row {
+  zoom: 1; }
+  .page-template-default .second-row:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+  .page-template-default .second-row img {
+    width: 280px;
+    margin-right: 10px; }
+
+.singular-post .column_1 {
+  width: 280px;
+  margin-right: 10px;
+  float: left; }
+.singular-post .hero-image {
+  max-width: 700px;
+  max-width: 80%;
+  overflow: hidden;
+  float: left; }
