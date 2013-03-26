@@ -8,6 +8,7 @@ body {
 	@include font-size(14);
 	line-height:2;
 	font-family: 'Josefin Slab', serif;
+	font-style: italic;
 
 	}
 
@@ -23,11 +24,13 @@ h1, h2,h3,h4,h5,h6 {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	
+	
 	}
 h1 {
 
 	font-weight:500;
 	text-transform: uppercase;
+	font-style: normal;
 
 	}
 	
@@ -41,11 +44,13 @@ h2 {
 	
 	letter-spacing:-3px;
 	font-weight:700;
+	font-style: normal;
 	}
 
 h3 {
 	
 	font-weight:900;
+	
 	
 	}
 

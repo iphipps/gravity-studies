@@ -61,11 +61,12 @@ h1.site-title{
 .site-description{
 	margin: 80px 10px 0 0;
 	float:right;
-	font-weight:300;
-	text-transform: uppercase;
 	
+	text-transform: uppercase;
+	color: black;
 	@include font-size(16);
 	letter-spacing: 1px;
+	
 	
 }
 .paintings{
@@ -109,12 +110,15 @@ h1.site-title{
 		background: $black;
 		width:150px;
 		text-align:left;
-		margin:0 0 20px 0;
+		margin:0 0 25px 0;
+		text-transform: uppercase;
+		font-weight:300;
+		@include font-size(14);
 		
 		
 		a{
 			color:$white;
-			padding: 3px 0 0 10px;
+			padding: 3px 0 0 18px;
 			width:150px;
 			display:block;
 		}

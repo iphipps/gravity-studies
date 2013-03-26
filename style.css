@@ -394,7 +394,7 @@ body {
 
 .top-header {
   zoom: 1;
-  margin: 25px auto; }
+  margin: 35px auto 45px auto; }
   .top-header:after {
     clear: both;
     content: ' ';
@@ -413,7 +413,8 @@ body {
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 2;
-  font-family: "Josefin Slab", serif; }
+  font-family: "Josefin Slab", serif;
+  font-style: italic; }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -424,7 +425,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-weight: 500;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-style: normal; }
 
 h1 a {
   font-weight: 500;
@@ -432,7 +434,8 @@ h1 a {
 
 h2 {
   letter-spacing: -3px;
-  font-weight: 700; }
+  font-weight: 700;
+  font-style: normal; }
 
 h3 {
   font-weight: 900; }
@@ -517,8 +520,8 @@ h1.site-title {
 .site-description {
   margin: 80px 10px 0 0;
   float: right;
-  font-weight: 300;
   text-transform: uppercase;
+  color: black;
   font-size: 16px;
   font-size: 1.6rem;
   letter-spacing: 1px; }
@@ -552,10 +555,14 @@ h1.site-title {
   background: black;
   width: 150px;
   text-align: left;
-  margin: 0 0 20px 0; }
+  margin: 0 0 25px 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  font-size: 1.4rem; }
   .menu li a, .menu-item a {
     color: white;
-    padding: 3px 0 0 10px;
+    padding: 3px 0 0 18px;
     width: 150px;
     display: block; }
   .menu li:hover, .menu-item:hover {
@@ -659,7 +666,6 @@ h1.site-title {
     width: 0;
     height: 0; }
   .page-template-default .first-row img {
-    width: 280px;
     margin-right: 10px; }
 .page-template-default .second-row {
   zoom: 1; }
@@ -673,7 +679,6 @@ h1.site-title {
     width: 0;
     height: 0; }
   .page-template-default .second-row img {
-    width: 280px;
     margin-right: 10px; }
 
 .singular-post .column_1 {
@@ -719,7 +724,6 @@ h1.site-title {
     width: 0;
     height: 0; }
   .page-template-about-us .first-row img {
-    width: 280px;
     margin-left: 290px;
     margin-right: 10px; }
 .page-template-about-us .second-row {
@@ -735,7 +739,6 @@ h1.site-title {
     width: 0;
     height: 0; }
   .page-template-about-us .second-row img {
-    width: 280px;
     margin-right: 290px; }
 
 .footer-site-title {
@@ -747,7 +750,7 @@ h1.site-title {
   background: url("images/logo-footer.png") center center no-repeat transparent;
   height: 140px;
   width: 140px;
-  margin-top: 10px;
+  margin: 10px;
   float: right; }
 
 .contentinfo h3 {

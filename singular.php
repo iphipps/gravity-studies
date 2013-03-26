@@ -41,7 +41,8 @@
 			<div class="branding">
 				<div class="top-header">
 				<h1 class="title site-title">
-				<?php echo '<a href="' . home_url() . '" title="Gravity Studies" rel="home">'; ?><span class="title-background"></span><span class="title-gravity">Gravity</span> <span class="title-studies">Studies</a></h1><h2 class="description site-description">Paintings <br/>BY <br/>Nicole Martinez</h2>				
+				<?php echo '<a href="' . home_url() . '" title="Gravity Studies" rel="home">'; ?><span class="title-background"></span><span class="title-gravity">Gravity</span> <span class="title-studies">Studies</a></h1>
+				<h2 class="description site-description"><span class="paintings">Paintings </span><span class="by">BY </span><span class="nicole">Nicole</span><span class="martinez">Martinez</span></h2>				
 				</div>
 
 			</div><!-- / .branding -->
@@ -73,11 +74,12 @@
 										<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 								</div>
 								<div class="entry-paragraph">
-									<?php do_atomic( 'open_entry' ); // firewood_open_entry ?>
+									
 									<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'firewood' ) ); ?>
 
-									<a href="#" class="inquiry-purchase">Inquire For Purchase</a>
+									
 								</div>
+								<a href="#" class="inquiry-purchase">Inquire For Purchase</a>
 							</div>
 							<div class="hero-image">
 							<?php if( get_field('big_image') ): ?>

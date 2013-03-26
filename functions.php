@@ -64,7 +64,9 @@ function firewood_theme_setup() {
 	/* Add the title, byline, and entry meta */
 	add_action( "{$prefix}_open_entry", 'firewood_entry_header' );
 
+	/*form stuff*/
 
+	
 
 
 	/* Deregister WordPress jQuery on the frontend */
@@ -309,6 +311,10 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
+
+
+
+
 
 
 
