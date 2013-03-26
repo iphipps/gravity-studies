@@ -1,93 +1,7 @@
 //site title   
 
-/* for footer now
-$dependency-a-height: 140px;
-$dependency-a-width: 134px;
-h1.site-title{
-	height:200px;
-	width:200px;
-	//border: solid red 1px;
-	float:left;
-
-	a{
-		color:grey;
-		border: solid red 1px;
-		display:block;
-		width:$dependency-a-width;
-		height:$dependency-a-height;
-		position:relative;
-		overflow:hidden;
-		
-	}
-}
 
 
-.title-background{
-	display:block;
-	position:absolute;
-	z-index:-9999;
-	
-	
-}
-
-
-
-//title-background by page (remember to include ie override)
-
-/*  these are all different*/
-/*
-.singular-page-template-method .title-background{
-	width:90px;
-	height:$dependency-a-height;
-	background-color: lighten($red, 10%);
-	left:-20px;
-	@include transform(skewX(10deg));
-	
-	
-	
-}
-
-
-
-
-.home .title-background{
-	width:$dependency-a-width;
-	height:90px;
-	background-color: lighten($red, 10%);
-	top:-20px;
-	@include transform(skewy(-10deg));
-	
-	
-	
-}
-
-
-.singular-page .title-background{
-	width:$dependency-a-width;
-	height:90px;
-	background-color: lighten($red, 10%);
-	top:80px;
-	@include transform(skewy(20deg));
-	
-	
-	
-}
-
-
-
-.singular-post .title-background{
-	width:90px;
-	height:$dependency-a-height;
-	background-color: lighten($red, 10%);
-	right:-20px;
-	@include transform(skewX(-10deg));
-	
-	
-	
-}
-
-
-*/
 
 
 h1.site-title{
@@ -145,7 +59,7 @@ h1.site-title{
 *****/
 
 .site-description{
-	margin-top: 80px;
+	margin: 80px 10px 0 0;
 	float:right;
 	font-weight:300;
 	text-transform: uppercase;
@@ -171,7 +85,7 @@ h1.site-title{
 /*****
 ** menu 
 *****/
-.menu ul{
+.menu ul, ul.menu{
 	list-style-type: none;
 	margin:0;
 	padding:0;

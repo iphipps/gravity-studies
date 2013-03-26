@@ -23,7 +23,7 @@ get_header(); // Loads the header.php template. ?>
 
 				<div class="<?php firewood_entry_class(); ?>">
 
-					<?php do_atomic( 'open_entry' ); // firewood_open_entry ?>
+					
 
 						<div class="entry-content">
 							<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'thumbnail' ) ); ?>

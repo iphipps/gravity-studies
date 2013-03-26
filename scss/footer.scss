@@ -1,0 +1,14 @@
+.footer-site-title{
+	@include ir;
+	background: url('images/logo-footer.png') center center no-repeat transparent;
+	height: 140px;
+	width:140px;
+	margin-top:10px;
+	float:right;
+}
+
+.contentinfo h3{
+	width:300px;
+	float:left;
+	margin-top:120px;
+}

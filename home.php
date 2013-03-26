@@ -105,7 +105,7 @@
 
 			<?php endif; ?>
 
-		<?php do_atomic( 'close_content' ); // firewood_close_content ?>
+		
 
 	
 

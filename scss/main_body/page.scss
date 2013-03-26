@@ -4,9 +4,9 @@
 	}
 
 	.main{
-		margin-left:290px;
-		margin-top:-105px;
-		width:80%;
+		margin:-105px auto 0 auto;
+		width:870px;
+		padding-left:290px;
 		@include clrfx;
 		z-index:-200;
 	}

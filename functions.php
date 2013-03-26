@@ -54,7 +54,9 @@ function firewood_theme_setup() {
 	add_action( "{$prefix}_branding", 'hybrid_site_title' );
 	add_action( "{$prefix}_branding", 'hybrid_site_description' );
 	
-		
+	/* Filter site query */
+	add_filter( 'pre_get_posts', 'gravity_query_filter' );
+	
 	/* Add site title and description */	
 	add_filter( "{$prefix}_site_title", 'firewood_filter_site_title' );
 	add_filter( "{$prefix}_site_description", 'firewood_filter_site_description' );
@@ -72,6 +74,15 @@ function firewood_theme_setup() {
 	add_action( "{$prefix}_close_content", 'firewood_loop_nav' );
 	
 	
+}
+
+
+function gravity_query_filter( $query ) {
+
+	if ( $query->is_main_query() && is_home() ) {
+		$query->set( 'posts_per_page', 30 );
+	}
+
 }
 
 

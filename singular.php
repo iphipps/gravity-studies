@@ -81,7 +81,7 @@
 							</div>
 							<div class="hero-image">
 							<?php if( get_field('big_image') ): ?>
-							<img src="<?php the_field('big_image'); ?>" alt="" />
+							<img src="<?php the_field('big_image'); ?>" alt="" height="850px" width="850px" />
 							<?php endif;?>
 
 							</div>

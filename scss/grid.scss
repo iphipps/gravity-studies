@@ -21,21 +21,21 @@ body {
 	
 	width:100%;
 	margin: 0 auto;
-	border-top: 10px black solid;
+	border-top: 25px black solid;
 
 	
 	}
 	
 .banner{
-	width:90%;
+	width:1160px;
 	margin: 0 auto;
 	@include clrfx;
 }
 .main {
 	padding-bottom: 230px; //(negative margin top = negative footer height)*-1+(margin-bottom of main)
 	margin-bottom:60px;
-	width:90%;
-	margin:0 auto 0 auto;
+	width:1160px;
+	margin:0 auto 60px auto;
 	@include clrfx;
 }
 	
@@ -54,7 +54,7 @@ body {
 	} 
 
 .contentinfo{
-	width:90%;
+	width: 1160px;
 	margin:0 auto 0 auto;
 	color: white;
 }
@@ -63,5 +63,5 @@ body {
 
 .top-header{
 	@include clrfx;
-	margin:20px auto;
+	margin:25px auto;
 }

@@ -336,10 +336,10 @@ body {
   min-height: 100%;
   width: 100%;
   margin: 0 auto;
-  border-top: 10px black solid; }
+  border-top: 25px black solid; }
 
 .banner {
-  width: 90%;
+  width: 1160px;
   margin: 0 auto;
   zoom: 1; }
   .banner:after {
@@ -355,8 +355,8 @@ body {
 .main {
   padding-bottom: 230px;
   margin-bottom: 60px;
-  width: 90%;
-  margin: 0 auto 0 auto;
+  width: 1160px;
+  margin: 0 auto 60px auto;
   zoom: 1; }
   .main:after {
     clear: both;
@@ -388,13 +388,13 @@ body {
     height: 0; }
 
 .contentinfo {
-  width: 90%;
+  width: 1160px;
   margin: 0 auto 0 auto;
   color: white; }
 
 .top-header {
   zoom: 1;
-  margin: 20px auto; }
+  margin: 25px auto; }
   .top-header:after {
     clear: both;
     content: ' ';
@@ -467,59 +467,6 @@ cite {
 a {
   text-decoration: none; }
 
-/*
-.singular-page-template-method .title-background{
-	width:90px;
-	height:$dependency-a-height;
-	background-color: lighten($red, 10%);
-	left:-20px;
-	@include transform(skewX(10deg));
-	
-	
-	
-}
-
-
-
-
-.home .title-background{
-	width:$dependency-a-width;
-	height:90px;
-	background-color: lighten($red, 10%);
-	top:-20px;
-	@include transform(skewy(-10deg));
-	
-	
-	
-}
-
-
-.singular-page .title-background{
-	width:$dependency-a-width;
-	height:90px;
-	background-color: lighten($red, 10%);
-	top:80px;
-	@include transform(skewy(20deg));
-	
-	
-	
-}
-
-
-
-.singular-post .title-background{
-	width:90px;
-	height:$dependency-a-height;
-	background-color: lighten($red, 10%);
-	right:-20px;
-	@include transform(skewX(-10deg));
-	
-	
-	
-}
-
-
-*/
 h1.site-title {
   width: 140px;
   height: 130px;
@@ -568,7 +515,7 @@ h1.site-title {
 **site.description
 *****/
 .site-description {
-  margin-top: 80px;
+  margin: 80px 10px 0 0;
   float: right;
   font-weight: 300;
   text-transform: uppercase;
@@ -588,11 +535,11 @@ h1.site-title {
 /*****
 ** menu 
 *****/
-.menu ul {
+.menu ul, ul.menu {
   list-style-type: none;
   margin: 0;
   padding: 0; }
-  .menu ul li {
+  .menu ul li, ul.menu li {
     font-style: italic; }
 
 #menu-primary {
@@ -685,9 +632,9 @@ h1.site-title {
   right: 0; }
 
 .page-template-default .main {
-  margin-left: 290px;
-  margin-top: -105px;
-  width: 80%;
+  margin: -105px auto 0 auto;
+  width: 870px;
+  padding-left: 290px;
   zoom: 1;
   z-index: -200; }
   .page-template-default .main:after {
@@ -734,8 +681,6 @@ h1.site-title {
   margin-right: 10px;
   float: left; }
 .singular-post .hero-image {
-  max-width: 700px;
-  max-width: 80%;
   overflow: hidden;
   float: left; }
 
@@ -755,7 +700,9 @@ h1.site-title {
   padding-left: 290px;
   z-index: -200;
   position: absolute;
-  top: 268px; }
+  top: 268px;
+  max-height: 40px;
+  overflow: hidden; }
 .page-template-about-us .the_content {
   padding-left: 290px;
   min-height: 300px;
@@ -790,3 +737,20 @@ h1.site-title {
   .page-template-about-us .second-row img {
     width: 280px;
     margin-right: 290px; }
+
+.footer-site-title {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+  background: url("images/logo-footer.png") center center no-repeat transparent;
+  height: 140px;
+  width: 140px;
+  margin-top: 10px;
+  float: right; }
+
+.contentinfo h3 {
+  width: 300px;
+  float: left;
+  margin-top: 120px; }
