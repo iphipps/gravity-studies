@@ -1,0 +1,42 @@
+/**
+ * Theme Name: Gravity Studies
+ * Theme URI: http://gravitystudies.com
+ * Description: A study in gravity
+ * Version: 1.1
+ * Author: Ian Phipps and Nicole Martinez
+ * Author URI: http://ianmphipps.com
+ * Tags: theme-options, threaded-comments, translation-ready
+ * License: GNU General Public License v2.0
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Copyright (c) 2013 All rights reserved.
+ *
+ */
+
+
+ @import url(http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic);
+	// Import normalize
+	@import "scss/normalize";
+	
+	// Import variables
+	@import "bourbon/bourbon";
+
+	// Import variables
+	@import "scss/variables";
+
+	// Import mixins
+	@import "scss/mixins";
+
+	// Import grid
+	@import "scss/grid";
+	
+		
+	@import "scss/typography";
+
+	
+	@import "scss/header";
+
+
+	@import "scss/main";
+
+
+	@import "scss/footer";

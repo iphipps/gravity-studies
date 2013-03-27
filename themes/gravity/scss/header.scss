@@ -1,0 +1,137 @@
+//site title   
+
+
+
+
+
+h1.site-title{
+	width:140px;
+	height:130px;
+	float:left;
+	@include ir;
+	background-image: url('images/logo1.png');
+	background-repeat:no-repeat;
+	background-color:transparent;
+	background-position:center center;
+	position:relative;
+	
+	a{
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+	}
+}
+
+.home h1.site-title{
+	background-image: url('images/logo2.png');
+}
+
+.singular-post h1.site-title{
+	background-image: url('images/logo4.png');
+}
+
+.page-template-default h1.site-title{ //method
+	background-image: url('images/logo5.png');
+}
+
+.page-template-about-us h1.site-title{ //about-us
+	background-image: url('images/logo3.png');
+}
+.page-template-inquiries h1.site-title{ //about-us
+	background-image: url('images/logo3.png');
+}
+
+.title-gravity{
+	display:block;
+	padding: 8px 4px 70px 4px;
+	
+}
+
+.title-studies{
+	display:block;
+	padding: 0 4px 8px 4px;
+}
+
+/****
+**site.description
+*****/
+
+.site-description{
+	margin: 80px 10px 0 0;
+	float:right;
+	
+	text-transform: uppercase;
+	color: black;
+	@include font-size(16);
+	letter-spacing: 1px;
+	
+	
+}
+.paintings{
+	display:block;
+}
+.by{
+	display:block;
+
+}
+.nicole{
+	
+}
+.martinez{
+	font-style: italic;
+}
+
+/*****
+** menu 
+*****/
+.menu ul, ul.menu{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	
+	li{
+		font-style: italic;
+	}
+}
+
+
+#menu-primary{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	
+	
+}
+
+.menu li, .menu-item{
+		color:$white;
+		background: $black;
+		width:150px;
+		text-align:left;
+		margin:0 0 25px 0;
+		text-transform: uppercase;
+		font-weight:300;
+		@include font-size(14);
+		
+		
+		a{
+			color:$white;
+			padding: 3px 0 0 18px;
+			width:150px;
+			display:block;
+		}
+		
+		&:hover{
+			background: $red;
+		}
+		
+	}
+
+.menu li.current_page_item, .menu-item.current-menu-item{
+	width:100%;
+	background: $red;
+	
+	
+}

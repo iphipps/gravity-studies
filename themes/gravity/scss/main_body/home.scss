@@ -1,0 +1,64 @@
+.home .column-1{
+	width:280px;
+	height:280px;
+	float:left;
+	margin:0 10px 10px 0;
+}
+
+.home .post-title{
+	display:none;
+}
+
+.home .hentry{
+	
+	width: 280px;
+	height: 280px;
+	margin: 0 10px 10px 0;
+	position:relative;
+	cursor: pointer;
+	overflow:hidden;
+
+	.entry-content{
+		
+		
+		p{
+			position:absolute;
+			top:0;
+			right:0;
+			left:0;
+			bottom:0;
+			padding:60px 0 0 60px;
+			text-align:left;
+			z-index:-999;
+			background-color:lighten($red, 33%);
+			margin:0;
+			@include transition (opacity 2.0s ease-in-out);
+			opacity:0;
+			
+		}
+		
+		
+	}
+
+
+
+	&:hover{
+		.entry-content{
+			p{
+			z-index:1;
+			@include transition (opacity 2.0s ease-in-out);
+			opacity:1;
+			}
+		}
+	}
+}
+
+.home .link-to-post{
+	z-index:10;
+	position:absolute;
+	display:block;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}

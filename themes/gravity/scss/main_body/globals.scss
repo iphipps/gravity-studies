@@ -1,0 +1,59 @@
+.home .hentry{
+	width:250px;
+	float:left;
+}
+
+.inquiry-purchase{//as seen on .post
+	background-color:$red;
+	color:white;
+	padding:13px 10px 10px 10px;
+	@include font-size(18);
+	text-transform:uppercase;
+	font-style: italic;
+	margin: 20px 0;
+	display:block;
+}
+
+
+/***inquiries form ***/
+.inquiry-bundle{
+	@include clrfx;
+	margin-left: 290px;
+
+	.owner-contact{
+		width:290px;
+		float:left;
+	}
+
+	fieldset{
+		width:200px;
+		float:left;
+		//border:none;
+	}
+
+	label{
+		display:none;
+	}
+	$input-padding: 0 5px;
+
+	input{
+		padding: $input-padding;
+		padding: 8px 5px;
+		margin: 0 0 5px 0;
+		background-color: $grey;
+		border:1px solid darken($grey, 80%);
+		outline:none;
+		&:focus{
+			@include box-shadow(0 0 5px 0 $red);
+		}
+	}
+
+	textarea{
+		padding: $input-padding;
+		background-color: $grey;
+
+	}
+	button{
+		height:40px;
+	}
+}

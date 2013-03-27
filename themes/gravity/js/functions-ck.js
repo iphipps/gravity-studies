@@ -1,0 +1,1 @@
+(function(e){e("#contact button").click(function(t){e("#contact").validate({errorPlacement:function(){}});e("#contact").valid()&&ajaxformsendmail();t.preventDefault()})})(jQuery);
