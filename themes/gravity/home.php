@@ -43,7 +43,8 @@
 			<div class="branding">
 				<div class="top-header">
 				<h1 class="title site-title">
-				<?php echo '<a href="' . home_url() . '" title="Gravity Studies" rel="home">'; ?><span class="title-background"></span><span class="title-gravity">Gravity</span> <span class="title-studies">Studies</a></h1>
+				<?php echo '<a href="' . home_url() . '" title="Gravity Studies" rel="home">'; ?>Gravity Studies</a></h1>
+				</h1>
 				<h2 class="description site-description"><span class="paintings">Paintings </span><span class="by">BY </span><span class="nicole">Nicole</span><span class="martinez">Martinez</span></h2>				
 				</div>
 

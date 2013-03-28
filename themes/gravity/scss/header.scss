@@ -9,7 +9,7 @@ h1.site-title{
 	height:130px;
 	float:left;
 	@include ir;
-	background-image: url('images/logo1.png');
+	background-image: url('images/LOGO1.png');
 	background-repeat:no-repeat;
 	background-color:transparent;
 	background-position:center center;
@@ -25,22 +25,22 @@ h1.site-title{
 }
 
 .home h1.site-title{
-	background-image: url('images/logo2.png');
+	background-image: url('images/LOGO2.png');
 }
 
 .singular-post h1.site-title{
-	background-image: url('images/logo4.png');
+	background-image: url('images/LOGO4.png');
 }
 
-.page-template-default h1.site-title{ //method
-	background-image: url('images/logo5.png');
+.page-template-default h1.site-title{ 
+	background-image: url('images/LOGO5.png');
 }
 
-.page-template-about-us h1.site-title{ //about-us
-	background-image: url('images/logo3.png');
+.page-template-about-us h1.site-title{ 
+	background-image: url('images/LOGO3.png');
 }
-.page-template-inquiries h1.site-title{ //about-us
-	background-image: url('images/logo3.png');
+.page-template-inquiries h1.site-title{ 
+	background-image: url('images/LOGO4.png');
 }
 
 .title-gravity{

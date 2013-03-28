@@ -41,7 +41,7 @@
 									</address>
 								</div>
 								<div class="contact-form">
-									<form id="contact" class="contact" action="http://us.huntandgather.com/" method="post">
+									<form id="contact" class="contact" action="http://agc.huntandgather.com/" method="post">
 
 										<fieldset>
 

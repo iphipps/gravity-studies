@@ -28,17 +28,17 @@
 	fieldset{
 		width:200px;
 		float:left;
-		//border:none;
+		border:none;
 	}
 
 	label{
 		display:none;
 	}
-	$input-padding: 0 5px;
+	$input-padding: 8px 5px;
 
 	input{
 		padding: $input-padding;
-		padding: 8px 5px;
+		
 		margin: 0 0 5px 0;
 		background-color: $grey;
 		border:1px solid darken($grey, 80%);
@@ -49,11 +49,31 @@
 	}
 
 	textarea{
+		width:200px;
+		height:170px;
+		resize:none;
+		margin-bottom:10px;
 		padding: $input-padding;
 		background-color: $grey;
+		border:1px solid darken($grey, 80%);
+		outline:none;
+		&:focus{
+			@include box-shadow(0 0 5px 0 $red);
+		}
 
 	}
 	button{
 		height:40px;
+		//background: $red;
+		@include linear-gradient(top, lighten($red, 15%), $red, $fallback: $red);
+
+		color: white;
+		outline:none;
+		border:none;
+		text-transform: uppercase;
+		padding: 15px 10px;
+		&:hover{
+			background:$red;
+		}
 	}
 }
