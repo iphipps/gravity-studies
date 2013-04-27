@@ -23,7 +23,9 @@ get_header(); // Loads the header.php template. ?>
 
 				<div class="<?php firewood_entry_class(); ?>">
 
-					
+						<div class="the_excerpt">
+							<?php the_excerpt(); ?>
+						</div>
 
 						<div class="entry-content">
 							<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'thumbnail' ) ); ?>

@@ -16,6 +16,7 @@ h1.site-title{
 	position:relative;
 	
 	a{
+		@include ir;
 		position:absolute;
 		top:0;
 		bottom:0;

@@ -485,6 +485,11 @@ h1.site-title {
   background-position: center center;
   position: relative; }
   h1.site-title a {
+    border: 0;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    background-color: transparent;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -672,11 +677,11 @@ h1.site-title {
     z-index: -999;
     background-color: #ffdbdb;
     margin: 0;
-    -webkit-transition: opacity 2s ease-in-out;
-    -moz-transition: opacity 2s ease-in-out;
-    -ms-transition: opacity 2s ease-in-out;
-    -o-transition: opacity 2s ease-in-out;
-    transition: opacity 2s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
     opacity: 0; }
   .home .hentry:hover .entry-content p {
     z-index: 1;
@@ -764,7 +769,7 @@ h1.site-title {
   padding-left: 290px;
   z-index: -200;
   position: absolute;
-  top: 268px;
+  top: 318px;
   max-height: 40px;
   overflow: hidden; }
 .page-template-about-us .the_content {

@@ -32,7 +32,7 @@
 			z-index:-999;
 			background-color:lighten($red, 33%);
 			margin:0;
-			@include transition (opacity 2.0s ease-in-out);
+			@include transition (opacity 1.0s ease-in-out);
 			opacity:0;
 			
 		}
