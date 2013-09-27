@@ -47,7 +47,9 @@
 			@include box-shadow(0 0 5px 0 $red);
 		}
 	}
-
+	.permalink{
+		display:none;
+	}
 	textarea{
 		width:200px;
 		height:170px;
@@ -62,7 +64,7 @@
 		}
 
 	}
-	button{
+	button, input[type='submit']{
 		height:40px;
 		//background: $red;
 		@include linear-gradient(top, lighten($red, 15%), $red, $fallback: $red);

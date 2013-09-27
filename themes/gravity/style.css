@@ -12,7 +12,7 @@
  * Copyright (c) 2013 All rights reserved.
  *
  */
-/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -202,7 +202,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -413,12 +413,12 @@ body {
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 2;
-  font-family: "Josefin Slab", serif;
+  font-family: 'Josefin Slab', serif;
   font-style: italic; }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
-  margin: 0 0 0.4em;
+  margin: 0 0 .4em;
   padding: 8px 0 0;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; }
@@ -622,6 +622,8 @@ h1.site-title {
     outline: none; }
     .inquiry-bundle input:focus {
       box-shadow: 0 0 5px 0 #ff3333; }
+  .inquiry-bundle .permalink {
+    display: none; }
   .inquiry-bundle textarea {
     width: 200px;
     height: 170px;
@@ -633,21 +635,18 @@ h1.site-title {
     outline: none; }
     .inquiry-bundle textarea:focus {
       box-shadow: 0 0 5px 0 #ff3333; }
-  .inquiry-bundle button {
+  .inquiry-bundle button, .inquiry-bundle input[type='submit'] {
     height: 40px;
     background-color: #ff3333;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff8080), color-stop(100%, #ff3333));
     background-image: -webkit-linear-gradient(top, #ff8080, #ff3333);
-    background-image: -moz-linear-gradient(top, #ff8080, #ff3333);
-    background-image: -ms-linear-gradient(top, #ff8080, #ff3333);
-    background-image: -o-linear-gradient(top, #ff8080, #ff3333);
-    background-image: linear-gradient(top, #ff8080, #ff3333);
+    background-image: linear-gradient(to bottom,#ff8080, #ff3333);
     color: white;
     outline: none;
     border: none;
     text-transform: uppercase;
     padding: 15px 10px; }
-    .inquiry-bundle button:hover {
+    .inquiry-bundle button:hover, .inquiry-bundle input[type='submit']:hover {
       background: #ff3333; }
 
 .home .column-1 {
@@ -679,16 +678,12 @@ h1.site-title {
     margin: 0;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
     opacity: 0; }
   .home .hentry:hover .entry-content p {
     z-index: 1;
     -webkit-transition: opacity 2s ease-in-out;
     -moz-transition: opacity 2s ease-in-out;
-    -ms-transition: opacity 2s ease-in-out;
-    -o-transition: opacity 2s ease-in-out;
     transition: opacity 2s ease-in-out;
     opacity: 1; }
 
