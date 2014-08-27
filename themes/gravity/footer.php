@@ -17,7 +17,7 @@
 			<?php do_atomic( 'open_footer' ); // firewood_open_footer ?>
 
 			<?php do_atomic( 'footer' ); // firewood_footer ?>
-			<h3>Nicole Martinez, Copyright 2003</h3>
+			<h3>Nicole Martinez, Copyright 2014</h3>
 			<h1 class="footer-site-title">Gravity Studies</h1>
 
 			<?php do_atomic( 'close_footer' ); // firewood_close_footer ?>
@@ -25,6 +25,7 @@
 		</div><!-- / .contentinfo -->
 
 	<?php do_atomic( 'after_footer' ); // firewood_after_footer ?>
+	
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="<?php echo get_stylesheet_directory_uri() . '/js/jquery-1.7.2.min.js'?>"><\/script>')</script>

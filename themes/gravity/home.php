@@ -78,10 +78,12 @@
 					<?php do_atomic( 'open_entry' ); // firewood_open_entry ?>
 						
 						<div class="entry-content">
+							<div class="entry-image">
 							<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'medium' ) ); ?>
-
+							</div>
+							<div class="entry-copy">
 							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'firewood' ) ); ?>
-							
+							</div>
 							
 						</div><!-- / .entry-content -->
 						<a class="link-to-post" href="<?php echo get_permalink(); ?>">

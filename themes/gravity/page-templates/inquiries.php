@@ -30,14 +30,8 @@
 							<div class="inquiry-bundle">
 								<div class="owner-contact">
 									<address>
-										38 Charles Street<br /> 
-										Suite 4<br />
-										Boston, Massachusetts 02114<br />
-										T: 305.794.9417<br />
-										<br />
-										
 										Inquiries<br />
-										gravity.studies.art@gmail.com
+										nicolemartinez9@gmail.com
 									</address>
 								</div>
 								<div class="contact-form">
@@ -91,7 +85,7 @@
 												<input type="hidden" name="pageHistory" value="0">
 
 
-												<input type="submit" name="submit" value="Send Message" id="ss-submit">
+												<input type="submit" class="inquiry-purchase" name="submit" value="Send Message" id="ss-submit">
 												
 											</div><!-- / .submit -->
 

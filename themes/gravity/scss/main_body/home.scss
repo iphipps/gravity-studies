@@ -21,7 +21,7 @@
 	.entry-content{
 		
 		
-		p{
+		.entry-copy{
 			position:absolute;
 			top:0;
 			right:0;
@@ -30,9 +30,9 @@
 			padding:60px 0 0 60px;
 			text-align:left;
 			z-index:-999;
-			background-color:lighten($red, 33%);
+			background-color:rgba(255,219,219,.88);
 			margin:0;
-			@include transition (opacity 1.0s ease-in-out);
+			@include transition (opacity 0.2s ease-in-out);
 			opacity:0;
 			
 		}
@@ -44,9 +44,9 @@
 
 	&:hover{
 		.entry-content{
-			p{
+			.entry-copy{
 			z-index:1;
-			@include transition (opacity 2.0s ease-in-out);
+			@include transition (opacity 0.2s ease-in-out);
 			opacity:1;
 			}
 		}
